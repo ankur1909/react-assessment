@@ -1,0 +1,48 @@
+.header {
+	background-color: #ebeef4;
+	color: white;
+	padding: 15px;
+	display: flex;
+	gap: 15px;
+}
+.select {
+	appearance: none; /* For modern browsers */
+	-webkit-appearance: none; /* Safari/Chrome */
+	-moz-appearance: none; /* Firefox */
+	border: 1px solid gray;
+	border-radius: 4px;
+	font-size: 15px;
+	padding: 5px;
+	font-weight: 300;
+	color: #796a6a;
+}
+
+.searchBar {
+	display: flex;
+	width: 100%;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 4px;
+	font-size: 15px;
+	padding: 3px;
+	font-weight: 300;
+	position: relative;
+}
+
+.searchInput {
+	width: 100%;
+	padding: 0.3rem 1rem 0.3rem 1.6rem;
+	border: none;
+	border-radius: 6px;
+	font-size: 1rem;
+	outline: none;
+}
+
+.searchIcon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	color: #777;
+	font-size: 1rem;
+}
