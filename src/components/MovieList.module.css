@@ -2,7 +2,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	font-family: "Open Sans", sans-serif;
-	gap: 20px;
 	border: 1px solid #cbcdd4;
 	border-top: none;
 	border-right: none;
@@ -14,24 +13,64 @@
 	cursor: pointer;
 }
 
+.detailRating {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.selectedMovie {
+	background-color: #c4e2e3;
+}
+
+.detailRatings {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.ratingSource {
+	border: 1px solid blue;
+	border-radius: 15px;
+	font-size: 13px;
+	padding: 5px;
+	color: blue;
+}
+
 .episode {
 	color: #989aa2;
 	font-size: 13px;
+	width: 10%;
 }
 
 .title {
 	font-weight: 600;
 	font-size: 15px;
+	width: 30%;
 }
 
 .releaseDate {
+	display: flex;
+	justify-content: center;
 	color: #989aa2;
 	font-size: 15px;
 	font-weight: 600;
+	width: 20%;
 }
 
 .listItem:first-child {
 	border-top: 1px solid #cbcdd4;
+}
+
+.poster {
+	width: 170px;
+}
+
+.detailPoster {
+	display: flex;
+	gap: 10px;
+	margin-top: 15px;
 }
 
 .moviesContainer {
@@ -44,12 +83,12 @@
 	padding: 15px;
 	justify-content: center;
 	height: 100vh;
-	width: 50%;
+	width: 30%;
 	border-left: 1px solid #cbcdd4;
 }
 
 .moviesList {
-	width: 50%;
+	width: 70%;
 }
 
 .detailTitle {
@@ -60,11 +99,15 @@
 .detailDescription {
 	font-weight: normal;
 	font-size: 16px;
-	color: #989aa2;
+	color: black;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .detailDirector {
 	font-weight: normal;
 	font-size: 16px;
-	color: #989aa2;
+	color: black;
 }
